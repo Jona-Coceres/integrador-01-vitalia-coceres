@@ -17,7 +17,10 @@
     <header>
       <img src="./assets/img/logo-1.png" alt="logo" class="logo" />
       <!-- Navbar -->
-      <nav>
+      <nav class="navbar">
+        <label for="toggle-menu"><i class="fa-solid fa-bars"></i></label>
+        <input type="checkbox" id="toggle-menu" />
+
         <ul class="lista_nav">
           <li><a href="#hero">Home</a></li>
           <li><a href="#info">Servicios</a></li>
@@ -25,12 +28,11 @@
           <li><a class="btn_nav" href="#contacto">Contactános</a></li>
         </ul>
       </nav>
-      <a href="./pages/login.html" class="ingreso"
-        ><i class="fa-solid fa-user fa-lg"></i>Ingresar</a
-      >
-      <!-- <div class="burg_ico">
-          <i class="fa-solid fa-bars"></i>
-        </div> -->
+      <div class="btn-login">
+        <a href="./pages/login.html" class="ingreso"
+          ><i class="fa-solid fa-user fa-lg"></i>Ingresar</a
+        >
+      </div>
     </header>
     <main>
       <section id="hero">
