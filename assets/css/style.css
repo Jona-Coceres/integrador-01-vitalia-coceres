@@ -26,6 +26,7 @@
   font-family: "Open Sans", sans-serif;
   color: var(--texto_1);
   -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
 }
 
 body {
