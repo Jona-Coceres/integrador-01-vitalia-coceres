@@ -35,6 +35,12 @@ body {
   background-position: center;
   background-attachment: fixed;
 }
+.loginBox img {
+  display: block;
+  width: 90%;
+  margin: auto;
+}
+
 .loginBox {
   display: flex;
   justify-content: center;
