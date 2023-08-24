@@ -63,6 +63,7 @@ header {
 .menu-label {
   display: none;
 }
+
 .menu-label i {
   font-size: 30px;
   color: var(--primary);
@@ -130,9 +131,6 @@ header {
   text-transform: uppercase;
 }
 
-.login a:hover:after {
-  display: none;
-}
 
 /* ============= HERO SECTION =============== */
 
