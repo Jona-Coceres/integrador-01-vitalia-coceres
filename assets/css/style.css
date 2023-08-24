@@ -37,23 +37,18 @@ body {
 header {
   background: var(--bg-hero);
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   padding: 0px 40px;
   height: 70px;
   position: fixed;
   width: 100%;
   box-shadow: 0 0 0 1px #cfd9e0;
-  z-index: 999;
+  z-index: 2;
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  margin-right: auto;
-  height: 100%;
-  cursor: pointer;
+  width: 200px;
 }
 .navbar {
   display: flex;
@@ -63,19 +58,23 @@ header {
 }
 .navbar i {
   font-size: 35px;
+}
+#menu-toggle,
+.menu-label {
   display: none;
 }
-#toggle-menu{
-  display: none;
+.menu-label i {
+  font-size: 30px;
+  color: var(--primary);
 }
-.lista_nav {
+.lista-nav {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1rem;
 }
 
-.lista_nav a {
+.lista-nav a {
   color: var(--texto_1);
   margin: 0px 5px;
   padding: 5px 10px;
@@ -83,7 +82,7 @@ header {
   transition: all 0.5s ease;
   position: relative;
 }
-.lista_nav a:after {
+.lista-nav a:after {
   content: "";
   width: 0;
   height: 2px;
@@ -94,21 +93,22 @@ header {
   transition: all 0.5s ease;
   will-change: width;
 }
-.lista_nav a:hover:after {
+.lista-nav a:hover:after {
   width: 100%;
   right: 0;
 }
-.lista_nav .btn_nav:hover:after {
+.lista-nav .btn_nav:hover:after {
   display: none;
 }
-.lista_nav .btn_nav {
+.lista-nav 
+.btn_nav {
   color: var(--texto_2);
 }
-.lista_nav li:first-child > a {
+.lista-nav li:first-child > a {
   font-weight: 600;
   color: var(--primary);
 }
-.lista_nav a:hover {
+.lista-nav a:hover {
   color: var(--primary);
 }
 .btn_nav {
@@ -118,53 +118,22 @@ header {
   background: var(--primary);
   border-radius: 50px;
   border: 2px solid transparent;
-  transition: all 0.4s ease;;
+  transition: all 0.4s ease;
 }
 .btn_nav:hover {
   border: 2px solid var(--primary);
   color: var(--primary);
   background: transparent;
 }
-
-.btn-login {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-left: 2rem;
-  cursor: pointer;
-  gap: 5px;
-}
-.btn-login a,
-.btn-login i {
+.lista-nav .login {
   color: var(--acento);
+  text-transform: uppercase;
 }
-.login a {
-  color: var(--primary);
-  text-decoration: none;
-}
+
 .login a:hover:after {
   display: none;
 }
-@media (max-width: 576px){
-  .navbar ul {
-    background: var(--bg-hero);
-    width: 100%;
-    height: calc(100vh - 65px);
-    position: absolute;
-    top: 65px;
-    left: 0;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    display: none;
-  }
-  .navbar i{
-    display: block;
-  }
-  #toggle-menu:checked ~ .lista_nav {
-    display: flex;
-  }
-}
+
 /* ============= HERO SECTION =============== */
 
 main {
