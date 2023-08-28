@@ -119,7 +119,10 @@ i {
   display: flex;
   gap: 5px;
 }
-label a {
+.derecha a{
+  color: #fff;
+}
+.label a {
   color: #fff;
   text-decoration: none;
 }
