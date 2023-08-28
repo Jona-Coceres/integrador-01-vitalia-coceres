@@ -101,13 +101,13 @@
   }
 }
 
-/* Celu */
+/* ========= Celu ======= */
 
 @media (max-width: 320px) {
   header {
-    background: green;
+    background: var(--bg-hero);
     padding: 0;
-    display: none;
+    display: flex;
     justify-content: space-around;
   }
   #hero {
@@ -201,5 +201,10 @@
   .footer .grupo-1 {
     display: flex;
     flex-direction: column;
+  }
+  .footer .redes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
