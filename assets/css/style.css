@@ -191,18 +191,14 @@ main {
   transition: all 0.4s ease;
 }
 .btn_2 {
-  color: var(--acento);
-  border: 2px solid var(--acento);
-  background: transparent;
+  color: var(--texto_2);
+  background: var(--acento);
   padding: 14px 47px;
   border-radius: 90px;
 }
 .btn_2:hover {
-  border: 2px solid var(--acento-2);
-  color: var(--acento-2);
-  background: #fff0f9;
-  padding: 14px 47px;
-  border-radius: 90px;
+  color: var(--texto_2);
+  background: #7f0545;
   transition: all 0.4s ease;
 }
 .hero-img {
@@ -478,7 +474,7 @@ main {
   line-height: 1.5em;
 }
 
-.footer .grupo-1 ul{
+.footer .grupo-1 ul {
   display: flex;
   flex-direction: column;
 }
